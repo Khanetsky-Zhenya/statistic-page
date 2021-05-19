@@ -1,0 +1,14 @@
+.main__content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: 148px repeat(2, 242px);
+    grid-gap: 32px;  
+    grid-template-areas: 
+                        "card card card"
+                        "graph graph diagram"
+                        "chart chart geo"; 
+    padding: 48px;
+    background: #212427;
+    border-radius: 0px 0px 20px 0px;
+    box-sizing: border-box;
+}

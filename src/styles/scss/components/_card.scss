@@ -1,0 +1,97 @@
+h2, p {
+    margin: 0;
+}
+.card {
+    grid-area: card;
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 1;
+    padding: 24px 24px 33px 24px;
+    border: 1px solid #4D4D4D;
+    background: #282C31;
+    border-radius: 13px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            color: #CACACA;
+        }
+        &-sum {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #CACACA;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-statistic {
+            position: relative;
+            margin-right: 16px;
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #979797;
+
+            &--grow:after {
+                position: absolute;
+                content: '';
+                top: 5px;
+                right: -16px;
+                width: 12px;
+                height: 14px;
+                background: url(../../img/card/grow-icon.png) no-repeat center center;
+                cursor: pointer;
+            }
+            &--decrease:after {
+                position: absolute;
+                content: '';
+                top: 6px;
+                right: -16px;
+                width: 12px;
+                height: 14px;
+                background: url(../../img/card/decrease-icon.png) no-repeat center center;
+                cursor: pointer;
+            }
+        }
+        &-more {
+            width: 26px;
+            cursor: pointer;
+        }
+    }
+}
+.card__new {
+    display: none;
+    grid-area: card;
+    grid-column: span 1;
+    padding: 24px 24px 33px 24px;
+    border: 1px solid #4D4D4D;
+    background: #282C31;
+    border-radius: 13px;
+    
+    &-link {
+        text-decoration: none;
+    }
+    &-text {
+        font-family: Open Sans;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #CACACA;
+    }
+}
+

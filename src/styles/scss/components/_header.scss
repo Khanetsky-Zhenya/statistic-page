@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  padding: 0 48px;
+  background: #212427;
+  border-radius: 0px 20px 0px 0px;
+    
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 35%;
+
+    &-title {
+      margin: 0;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      color: #CACACA;
+    }
+    @keyframes bounce {  /*штука для подпрыгивания иконки уведомления*/
+      0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+      80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+    &-notification {
+      padding-bottom: 4px;
+    }
+    &-notification:hover {  
+      animation: bounce 1s;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    &-name {
+      padding-right: 11px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #CACACA;
+    }
+    &-avatar {
+      width: 50px;
+      height: 50px;
+      padding-right: 25px;
+    }
+    &-more {
+      position: absolute;
+      top: 60px;
+      left: 120px;
+      cursor: pointer;
+    }
+  } 
+}
+.header__body-form-search {
+  position: relative;
+  margin: 0;
+}
+  input, button {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+input {
+  width: 153px;
+  height: 32px;
+  background: none;
+  border: 1px solid #4C4C4C;
+  padding-left: 38px;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+button {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  display: none;
+}

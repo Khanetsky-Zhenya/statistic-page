@@ -1,0 +1,17 @@
+.wrapper {position: relative;
+    display: flex;
+    max-width: 1600px;
+    padding: 160px;
+    margin: 0 auto;
+}
+.app::before {
+    position: absolute;
+    left: -300px;
+        top: -180px;
+    width: 1500px;
+    height: 810px;
+    background: url(../../../img/app/big-background.png) no-repeat center center;
+}
+.page {
+    width: 100%;
+}

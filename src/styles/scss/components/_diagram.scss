@@ -1,0 +1,38 @@
+.diagram {
+    grid-area: diagram;
+    border: 1px solid #4D4D4D;
+    background: #282C31;
+    border-radius: 13px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__content{
+        
+        &-title {
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            color: #CACACA;
+            margin: 0;
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        &-checkbox {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.diagram__info-label {
+    display: flex;
+    justify-content: start;
+    &:last-child {
+        margin-top: 10px;
+    }
+}
+
